@@ -100,7 +100,8 @@ export default function LargeCard() {
           </div>
         </Card>
       </div>
-      <div className="flex justify-evenly">
+
+      <div className="flex justify-evenly hidden">
         <Card className="lg:w-[275px] bg-[#252a41]">
           <div className="bg-[#198ff5] w-[275px] h-[8px] rounded -mt-6 -ml-6"></div>
 
