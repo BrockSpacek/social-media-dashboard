@@ -11,7 +11,7 @@ import { useState } from "react";
 const SmallCard = () => {
   return (
     <div>
-      <div className="flex justify-evenly mt-10">
+      <div className="lg:flex lg:justify-evenly mt-10">
         <Card className="lg:w-[275px] bg-[#f0f2fa]">
           <div className="flex justify-between mt-3">
             <h5 className="ml-1 text-[#63687e] font-semibold text-[20px]">
@@ -80,7 +80,7 @@ const SmallCard = () => {
           </div>
         </Card>
       </div>
-      <div className="flex justify-evenly mt-10">
+      <div className="lg:flex lg:justify-evenly mt-10">
         <Card className="lg:w-[275px] bg-[#f0f2fa]">
           <div className="flex justify-between mt-3">
             <h5 className="ml-1 text-[#63687e] font-semibold text-[20px]">
@@ -137,7 +137,7 @@ const SmallCard = () => {
             <h5 className="ml-1 text-[#63687e] font-semibold text-[20px]">
               Page Views
             </h5>
-            <img className="h-6 w-6 mr-1" src={FaceBookIcon}></img>
+            <img className="h-6 w-6 mr-1" src={YoutubeIcon}></img>
           </div>
 
           <div className="flex justify-evenly mt-3">
