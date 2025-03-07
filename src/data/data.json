@@ -1,0 +1,41 @@
+{
+    "totalFollowers": 23004,
+    "platforms": [
+      {
+        "platform": "Facebook",
+        "followers": 1987,
+        "change": 12,
+        "pageViews": 87, 
+        "pageViewsChange": 3,
+        "likes": 52,
+        "likesChange": -2
+      },
+      {
+        "platform": "Twitter",
+        "followers": 1044,
+        "change": 99,
+        "retweets": 117,
+        "retweetsChange": 303,
+        "likes": 507,
+        "likesChange": 553
+      },
+      {
+        "platform": "Instagram",
+        "followers": "11K",
+        "change": 1099,
+        "likes": 5462,
+        "likesChange": 2257,
+        "profileViews": "52K",
+        "profileViewsChange": 1375
+      },
+      {
+        "platform": "YouTube",
+        "subscribers": 8239,
+        "change": -144,
+        "likes": 107,
+        "likesChange": -19,
+        "totalViews": 1407,
+        "totalViewsChange": -12
+      }
+    ]
+  }
