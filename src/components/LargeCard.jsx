@@ -23,12 +23,16 @@ export default function LargeCard({ darkMode, toggleTheme }) {
 
     useEffect(() => {
         setTotalFollowers(data.totalFollowers);
+
         setFbFollowers(data.platforms[0].followers);
         setFbFollowersToday(data.platforms[0].change);
+
         setTwitterFollowers(data.platforms[1].followers);
         setTwitterFollowersToday(data.platforms[1].change);
+
         setIgFollowers(data.platforms[2].followers);
         setIgFollowersToday(data.platforms[2].change);
+
         setYtFollowers(data.platforms[3].subscribers); 
         setYtFollowersToday(data.platforms[3].change);
 
@@ -67,16 +71,16 @@ export default function LargeCard({ darkMode, toggleTheme }) {
         
         <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:flex-wrap gap-6">
           
-          <Card className={`w-[275px] ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
-            <div className="bg-[#198ff5] w-[275px] h-[8px] rounded -mt-6 -ml-6"></div>
+          <Card className={`w-[275px] border-none ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
+            <div className="bg-[#198ff5] w-[275px] h-[8px] rounded-t -mt-6 -ml-6"></div>
             <div className="flex justify-center mt-3">
               <img className="h-6 w-6 mr-1" src={FaceBookIcon} alt="Facebook" />
               <h5 className={`ml-1 ${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'}`}>@nathanf</h5>
             </div>
             <div className="text-center">
               <p className={`text-[60px] font-bold ${darkMode ? 'text-white' : ''}`}>{fbFollowers}</p>
-              <p className={`${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'} text-[21px] -mt-3 tracking-[0.2em]`}>
-                Followers
+              <p className={`${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'} text-[16px] -mt-3 tracking-[0.2em]`}>
+                FOLLOWERS
               </p>
             </div>
             <div className="flex justify-center">
@@ -88,16 +92,16 @@ export default function LargeCard({ darkMode, toggleTheme }) {
           </Card>
 
         
-          <Card className={`w-[275px] ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
-            <div className="bg-[#1ca0f2] w-[275px] h-[8px] rounded -mt-6 -ml-6"></div>
+          <Card className={`w-[275px] border-none ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
+            <div className="bg-[#1ca0f2] w-[275px] h-[8px] rounded-t -mt-6 -ml-6"></div>
             <div className="flex justify-center mt-3">
               <img className="h-6 w-6 mr-1" src={TwitterIcon} alt="Twitter" />
               <h5 className={`ml-1 ${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'}`}>@nathanf</h5>
             </div>
             <div className="text-center">
               <p className={`text-[60px] font-bold ${darkMode ? 'text-white' : ''}`}>{twitterFollowers}</p>
-              <p className={`${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'} text-[21px] -mt-3 tracking-[0.2em]`}>
-                Followers
+              <p className={`${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'} text-[16px] -mt-3 tracking-[0.2em]`}>
+                FOLLOWERS
               </p>
             </div>
             <div className="flex justify-center">
@@ -109,16 +113,16 @@ export default function LargeCard({ darkMode, toggleTheme }) {
           </Card>
 
           
-          <Card className={`w-[275px] ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
-            <div className="bg-gradient-to-r from-[hsl(37,97%,70%)] to-[hsl(329,70%,58%)] w-[275px] h-[8px] rounded -mt-6 -ml-6"></div>
+          <Card className={`w-[275px] border-none ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
+            <div className="bg-gradient-to-r from-[hsl(37,97%,70%)] to-[hsl(329,70%,58%)] w-[275px] h-[8px] rounded-t -mt-6 -ml-6"></div>
             <div className="flex justify-center mt-3">
               <img className="h-6 w-6 mr-1" src={InstagramIcon} alt="Instagram" />
               <h5 className={`ml-1 ${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'}`}>@realnathanf</h5>
             </div>
             <div className="text-center">
               <p className={`text-[60px] font-bold ${darkMode ? 'text-white' : ''}`}>{igFollowers}</p>
-              <p className={`${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'} text-[21px] -mt-3 tracking-[0.2em]`}>
-                Followers
+              <p className={`${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'} text-[16px] -mt-3 tracking-[0.2em]`}>
+                FOLLOWERS
               </p>
             </div>
             <div className="flex justify-center">
@@ -130,16 +134,16 @@ export default function LargeCard({ darkMode, toggleTheme }) {
           </Card>
 
         
-          <Card className={`w-[275px] ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
-            <div className="bg-[#c4032a] w-[275px] h-[8px] rounded -mt-6 -ml-6"></div>
+          <Card className={`w-[275px] border-none ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
+            <div className="bg-[#c4032a] w-[275px] h-[8px] rounded-t -mt-6 -ml-6"></div>
             <div className="flex justify-center mt-3">
               <img className="h-6 w-6 mr-1" src={YoutubeIcon} alt="YouTube" />
               <h5 className={`ml-1 ${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'}`}>Nathan F.</h5>
             </div>
             <div className="text-center">
               <p className={`text-[60px] font-bold ${darkMode ? 'text-white' : ''}`}>{ytFollowers}</p>
-              <p className={`${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'} text-[21px] -mt-3 tracking-[0.2em]`}>
-                Subscribers
+              <p className={`${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'} text-[16px] -mt-3 tracking-[0.2em]`}>
+                SUBSCRIBERS
               </p>
             </div>
             <div className="flex justify-center">

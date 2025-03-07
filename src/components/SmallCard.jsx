@@ -37,14 +37,17 @@ const SmallCard = ({ darkMode }) => {
         setFbPageViewsChange(data.platforms[0].pageViewsChange)
         setFbPageLikes(data.platforms[0].likes)
         setFbPageLikesChange(data.platforms[0].likesChange)
+
         setTwitterRetweets(data.platforms[1].retweets);
         setTwitterRetweetsChange(data.platforms[1].retweetsChange);
         setTwitterLikes(data.platforms[1].likes);
         setTwitterLikesChange(data.platforms[1].likesChange);
+
         setIgLikes(data.platforms[2].likes);
         setIgLikesChange(data.platforms[2].likesChange);
         setIgProfileViews(data.platforms[2].profileViews);
         setIgProfileViewsChange(data.platforms[2].profileViewsChange);
+
         setYtLikes(data.platforms[3].likes);
         setYtLikesChange(data.platforms[3].likesChange);
         setYtTotalViews(data.platforms[3].totalViews);
@@ -60,7 +63,7 @@ const SmallCard = ({ darkMode }) => {
       <h1 className={`text-3xl mt-16 ml-9 font-semibold mb-6 ${darkMode ? 'text-white' : 'text-gray-500'}`}>Overview - Today</h1>
       <div>
       <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:flex-wrap gap-6">
-          <Card className={`w-[275px] ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
+          <Card className={`w-[275px] border-none ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
             <div className="flex justify-between mt-3">
               <h5 className={`ml-1 font-semibold text-[20px] ${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'}`}>
                 Page Views
@@ -77,7 +80,7 @@ const SmallCard = ({ darkMode }) => {
             </div>
           </Card>
 
-          <Card className={`w-[275px] ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
+          <Card className={`w-[275px] border-none ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
             <div className="flex justify-between mt-3">
               <h5 className={`ml-1 font-semibold text-[20px] ${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'}`}>
                 Likes
@@ -94,7 +97,7 @@ const SmallCard = ({ darkMode }) => {
             </div>
           </Card>
 
-          <Card className={`w-[275px] ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
+          <Card className={`w-[275px] border-none ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
             <div className="flex justify-between mt-3">
               <h5 className={`ml-1 font-semibold text-[20px] ${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'}`}>
                 Likes
@@ -111,7 +114,7 @@ const SmallCard = ({ darkMode }) => {
             </div>
           </Card>
 
-          <Card className={`w-[275px] ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
+          <Card className={`w-[275px] border-none ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
             <div className="flex justify-between mt-3">
               <h5 className={`ml-1 font-semibold text-[20px] ${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'}`}>
                 Profile Views
@@ -129,7 +132,7 @@ const SmallCard = ({ darkMode }) => {
           </Card>
         </div>
         <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:flex-wrap gap-6 mt-6">
-          <Card className={`w-[275px] ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
+          <Card className={`w-[275px] border-none ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
             <div className="flex justify-between mt-3">
               <h5 className={`ml-1 font-semibold text-[20px] ${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'}`}>
                 Retweets
@@ -146,7 +149,7 @@ const SmallCard = ({ darkMode }) => {
             </div>
           </Card>
 
-          <Card className={`w-[275px] ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
+          <Card className={`w-[275px] border-none ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
             <div className="flex justify-between mt-3">
               <h5 className={`ml-1 font-semibold text-[20px] ${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'}`}>
                 Likes
@@ -163,7 +166,7 @@ const SmallCard = ({ darkMode }) => {
             </div>
           </Card>
 
-          <Card className={`w-[275px] ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
+          <Card className={`w-[275px] border-none ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
             <div className="flex justify-between mt-3">
               <h5 className={`ml-1 font-semibold text-[20px] ${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'}`}>
                 Likes
@@ -180,7 +183,7 @@ const SmallCard = ({ darkMode }) => {
             </div>
           </Card>
 
-          <Card className={`w-[275px] ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
+          <Card className={`w-[275px] border-none ${darkMode ? 'bg-[#252a41]' : 'bg-[#f0f2fa]'}`}>
             <div className="flex justify-between mt-3">
               <h5 className={`ml-1 font-semibold text-[20px] ${darkMode ? 'text-[#8b97c6]' : 'text-[#63687e]'}`}>
                 Page Views
